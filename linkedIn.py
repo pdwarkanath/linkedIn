@@ -44,21 +44,7 @@ def easyApplyNewPage():
 	uploadResumeLocation = pyautogui.locateCenterOnScreen('UploadResume.png')
 	print('upload resume ' + str(uploadResumeLocation))
 	pyautogui.click(uploadResumeLocation)
-	
-	"""
-	pdfLocation = pyautogui.locateCenterOnScreen('pdf.png')
-	if pdfLocation != None:
-		pyautogui.click(pdfLocation)
-		pyautogui.moveRel(260, 0, duration = 1)
-		pyautogui.click()
-		time.sleep(0.3)
-	
-		chooseRecentLocation = pyautogui.locateCenterOnScreen('ChooseRecent.png')
-		pyautogui.click(chooseRecentLocation)
-		time.sleep(0.3)
-		uploadNewLocation = pyautogui.locateCenterOnScreen('UploadNew.png')
-		pyautogui.click(uploadNewLocation)
-	"""
+
 	selectResume()
 	pyautogui.press('pagedown')
 	time.sleep(0.2)
@@ -72,11 +58,8 @@ def easyApplyNewPage():
 
 
 easyApplyLocation = pyautogui.locateCenterOnScreen('EasyApply.png')
-#if easyApplyLocation == None:
-	#pyautogui.hotkey('ctrl','w')
-#else:
 print('easy apply location ' +str(easyApplyLocation))
-pyautogui.click(432,432)
+pyautogui.click(easyApplyLocation)
 time.sleep(0.1)
 submitAppLocation = pyautogui.locateCenterOnScreen('SubmitApplication.png')
 if submitAppLocation == None:
