@@ -5,9 +5,9 @@ def easyApplyModal():
 	
 	#chooseRecent2Location = pyautogui.locateCenterOnScreen('ChooseRecent2.png')
 	#time.sleep(0.2)
-	pyautogui.click(617,467)
+	pyautogui.click(432,470)
 	#time.sleep(0.5)
-	pyautogui.click(717,467)
+	pyautogui.click(432,470)
 	#submitAppLocation = pyautogui.locateCenterOnScreen('SubmitApplication.png')
 	
 	pyautogui.click(841, 660)
@@ -60,9 +60,9 @@ def easyApplyNewPage():
 def easyApply():
 	#easyApplyLocation = pyautogui.locateCenterOnScreen('EasyApply.png')
 	pyautogui.click(432,470)
-	pyautogui.click(432,450)
+	pyautogui.click(432,440)
 		
-	time.sleep(0.1)
+	time.sleep(0.2)
 	submitAppLocation = pyautogui.locateCenterOnScreen('SubmitApplication.png')
 	
 	if submitAppLocation == None:
